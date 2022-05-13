@@ -2,8 +2,8 @@
 
 dns 处理的服务框架
 
-##  rock.dns.server
-- userdata = rock.dns.server{name , resolver , bind , region}
+##  vela.dns.server
+- userdata = vela.dns.server{name , resolver , bind , region}
 - name: 服务名称
 - bind: 监听套接字
 - region: 地址位置库
@@ -15,7 +15,7 @@ dns 处理的服务框架
 - [userdata.start()]()
 - 
 ```lua
-    local v = rock.dns.server{
+    local v = vela.dns.server{
         name = "dnslog",
         bind = "udp://127.0.0.1:53",
         region= region.sdk(),
@@ -70,4 +70,4 @@ dns 处理的服务框架
     end)
 ```
 
-## rock.dns.client
+## vela.dns.client
